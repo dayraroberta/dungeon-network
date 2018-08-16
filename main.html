@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title></title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <title>Dungeon's Network</title>
     <!-- LOAD FIREBASE -->
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-storage.js"></script>
     <script src="js/firebase-config.js"></script>
     <!--CSS, FONTS AND BOOTSTRAP -->
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800|Press+Start+2P" rel="stylesheet">
@@ -38,16 +40,16 @@
       </section>
 
       <section id="up-area" class="col-8 no-gutters ml-4 p-0 d-flex align-items-center justify-content-center">
-        <form class="col-11 d-flex flex-column">
+        <form class="col-11 py-3 d-flex flex-column">
           <textarea id="post-textarea" class="post-textarea" rows="4" cols="50"></textarea>
-          <div class="d-flex justify-content-between mt-3">
+          <div class="d-flex flex-wrap justify-content-between mt-3">
             <select class="filter-posts">
               <option value="none" selected> Select to post </option>
               <option value="public"> Open World </option>
               <option value="friends"> Guild </option>
               <option value="private"> Personal </option>
             </select>
-            <div class="d-flex align-items-center">
+            <div class="d-flex mt-2 align-items-center">
               <p class="character-count mr-2"> 300 </p>
               <button class="send-btn form-btn py-1 px-3" disabled> Up! </button>
             </div>
@@ -57,8 +59,11 @@
     </main>
 
     <section id="" class="d-flex justify-content-center mt-4">
-      <div class="user-menu col-3">
-        <button class="logout-btn form-btn py-1 px-3"> Logout! </button>
+      <div class="user-menu col-3 d-flex flex-column py-3">
+        <button type="button" class="users-dg-btn my-2" data-toggle="modal" data-target="#users-registred">
+          Search Party!
+        </button>
+        <button class="logout-btn form-btn my-2 py-1 px-3"> Logout! </button>
       </div>
       <div id="new-posts" class="col-8 ml-4">
         <div class="menu-view d-flex align-items-center justify-content-end my-3">
@@ -74,7 +79,28 @@
         </div>
       </div>
     </section>
-  <!-- Modal -->
+
+  <!-- MODAL LIST USERS -->
+  <div class="modal fade" id="users-registred" tabindex="-1" role="dialog" aria-labelledby="users-registred" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> Users in Dungeon!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul class="users-list"></ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL EDIT POST -->
     <section id="modal-edit">
       <div class="modal fade" id="edit-post" tabindex="-1" role="dialog" aria-labelledby="modalEditPosts" aria-hidden="true">
         <div class="modal-dialog" role="document">

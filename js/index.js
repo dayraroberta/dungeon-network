@@ -1,6 +1,11 @@
-var database = firebase.database();
+let database = firebase.database();
 
 $(document).ready(function() {
+  $("#splash-logo").fadeOut(5000, function() {
+    $("#splash-logo").addClass("splash-display");
+    $("#start-and-play").removeClass("startplay-display");
+  });
+
   $(".signin-btn").click(function(event) {
     event.preventDefault();
     var email = $(".email").val();

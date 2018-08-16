@@ -30,6 +30,28 @@ h1, h2, h3, h4, h5, h6, small, a, p, ul, li, input, label, button, form {
 img {
   vertical-align: middle;
 }
+
+.splash {
+  background-color: #081F2F;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 20vh;
+}
+
+.splash-display {
+  display: none;
+}
+
+.startplay-display {
+  display: none;
+}
+
 .form-title {
   font-family: "Press Start 2P";
   font-size: 1.2rem;
@@ -130,7 +152,6 @@ img {
 	box-shadow: 0 0 #81252A;
 	top: 6px;
 }
-
 
 .sub-txt {
   font-size: 0.6rem;

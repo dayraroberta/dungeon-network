@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title></title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <title>Dungeon's Network</title>
     <!-- LOAD FIREBASE -->
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-auth.js"></script>
@@ -16,24 +17,30 @@
   </head>
 
   <body>
-    <section id="start-and-play" class="mt-5 mr-5 d-flex justify-content-end">
-      <form class="d-flex flex-column">
-        <div class="mb-2">
-          <label class="form-label">Email</label>
-          <input class="email form-input  w-100" type="email" placeholder="EMAIL"/>
-        </div>
-        <div class="mb-2">
-          <label class="form-label">Password</label>
-          <input class="password form-input  w-100" type="password" placeholder="PASSWORD"/>
-        </div>
-        <div class="d-flex flex-column align-items-center">
-          <button class="signin-btn form-btn d-flex flex-column align-items-center mt-3 py-2 px-3"> Play <span class="sub-txt">(login)</span> </button>
-          <div class="d-flex align-items-center mt-3">
-            <hr class="divider-line"> <small class="divider-text mx-3">or</small> <hr class="divider-line">
+    <section id="splash-logo" class="splash">
+      <img src="assets/images/logo.png" class="logo">
+    </section>
+
+    <section id="start-and-play" class="startplay-display">
+      <div class="mt-5 mr-5 d-flex justify-content-end">
+        <form class="d-flex flex-column">
+          <div class="mb-2">
+            <label class="form-label">Email</label>
+            <input class="email form-input w-100" type="email" placeholder="EMAIL"/>
           </div>
-          <button class="start-btn form-btn d-flex flex-column align-items-center mt-3 py-2 px-3"> Start <span class="sub-txt">(register)</span> </button>
-        </div>
-      </form>
+          <div class="mb-2">
+            <label class="form-label">Password</label>
+            <input class="password form-input w-100" type="password" placeholder="PASSWORD"/>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <button class="signin-btn form-btn d-flex flex-column align-items-center mt-3 py-2 px-3"> Play <span class="sub-txt">(login)</span> </button>
+            <div class="d-flex align-items-center mt-3">
+              <hr class="divider-line"> <small class="divider-text mx-3">or</small> <hr class="divider-line">
+            </div>
+            <button class="start-btn form-btn d-flex flex-column align-items-center mt-3 py-2 px-3"> Start <span class="sub-txt">(register)</span> </button>
+          </div>
+        </form>
+      </div>
     </section>
     <!-- LOAD JQUERY AND JS'S -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
