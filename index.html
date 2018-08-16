@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <!-- LOAD FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-database.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <!--CSS, FONTS AND BOOTSTRAP -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800|Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+
+  <body>
+    <section id="start-and-play" class="mt-5 mr-5 d-flex justify-content-end">
+      <form class="d-flex flex-column">
+        <div class="mb-2">
+          <label class="form-label">Email</label>
+          <input class="email form-input  w-100" type="email" placeholder="EMAIL"/>
+        </div>
+        <div class="mb-2">
+          <label class="form-label">Password</label>
+          <input class="password form-input  w-100" type="password" placeholder="PASSWORD"/>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+          <button class="signin-btn form-btn d-flex flex-column align-items-center mt-3 py-2 px-3"> Play <span class="sub-txt">(login)</span> </button>
+          <div class="d-flex align-items-center mt-3">
+            <hr class="divider-line"> <small class="divider-text mx-3">or</small> <hr class="divider-line">
+          </div>
+          <button class="start-btn form-btn d-flex flex-column align-items-center mt-3 py-2 px-3"> Start <span class="sub-txt">(register)</span> </button>
+        </div>
+      </form>
+    </section>
+    <!-- LOAD JQUERY AND JS'S -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,207 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/images/games-white-pattern.png");
+  background-color: #081F2F;
+  margin: 0 auto;
+  height: 100%;
+  font-family: "Dosis", sans-serif, "Press Start 2P", cursive,;
+  font-size: 16px;
+  line-height: 1.71429;
+}
+
+h1, h2, h3, h4, h5, h6, p, small, a, ul, li, input, label, button, form {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+#profile-box {
+  background-color: #0B406C;
+  font-size: 1rem;
+  color: #FFF;
+}
+ .user-img {
+   background-color: #FFF;
+   width: 10vw;
+   height: 10vw;
+}
+
+.bar-color {
+  background-color: #B4BF35;
+}
+
+#up-area {
+  background-color: #0B406C;
+  font-size: 1rem;
+  color: #FFF;
+}
+
+.post-textarea {
+  border: none;
+  resize: none;
+}
+
+.post-textarea:focus {
+  outline: none;
+}
+
+.filter-posts, .filter-view {
+  background-color: #DA262F;
+  border: none;
+  font-family: "Press Start 2P";
+  font-size: 0.6rem;
+  color: #FFF;
+}
+
+.filter-view {
+  background-color: #630C53;
+  font-size: 0.5rem;
+}
+
+.filter-posts:focus, .filter-view:focus {
+  border: none;
+  outline: none;
+}
+
+.character-count {
+  font-family: "Press Start 2P";
+  font-size: 0.8rem;
+  color: #FFF;
+}
+
+.likes-count {
+  font-family: "Press Start 2P";
+  font-size: 0.8rem;
+  color: #081F2F;
+}
+
+.form-btn {
+  text-transform: uppercase;
+  font-family: "Press Start 2P";
+  font-size: 0.8rem;
+  color: #FFF;
+  border: none;
+  border-radius: 40px;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.post-btn {
+  font-size: 0.5rem;
+  opacity: 1;
+}
+
+.send-btn, .like-btn {
+  background-color: #B4BE37;
+  box-shadow: 0 6px #266141;
+}
+
+.send-btn:hover, .like-btn:hover {
+  color: #000;
+	box-shadow: 0 4px #266141;
+	top: 2px;
+}
+
+.send-btn:active, .like-btn:active {
+	box-shadow: 0 0 #266141;
+	top: 6px;
+}
+
+.edit-btn, .save-btn {
+  background-color: #61B5E5;
+  box-shadow: 0 6px #0B406C;
+}
+
+.edit-btn:hover, .save-btn:hover {
+  color: #000;
+	box-shadow: 0 4px #0B406C;
+	top: 2px;
+}
+
+.edit-btn:active, .save-btn:active {
+	box-shadow: 0 0 #0B406C;
+	top: 6px;
+}
+
+.del-btn, .close-btn {
+  background-color: #DA262F;
+  box-shadow: 0 6px #81252A;
+}
+
+.del-btn:hover, .close-btn:hover {
+  color: #000;
+	box-shadow: 0 4px #81252A;
+	top: 2px;
+}
+
+.del-btn:active, .close-btn:active {
+	box-shadow: 0 0 #81252A;
+	top: 6px;
+}
+
+.logout-btn {
+  background-color: #A01F62;
+  box-shadow: 0 6px #630C53;
+  opacity: 1;
+}
+
+.logout-btn:hover {
+  color: #000;
+	box-shadow: 0 4px #630C53;
+	top: 2px;
+}
+
+.logout-btn:active {
+	box-shadow: 0 0 #630C53;
+	top: 6px;
+}
+
+#new-posts {
+  background-color: #0B406C;
+}
+
+.filter-text {
+  font-family: "Press Start 2P";
+  font-size: 0.5rem;
+  color: #FFF;
+}
+
+.menu-view {
+  font-family: "Press Start 2P";
+  font-size: 0.5rem;
+  color: #FFF;
+}
+
+.box-post {
+  background-color: #FFF;
+}
+
+.text-wrap {
+  word-wrap: break-word;
+}
+
+.modal-content {
+  background-color: #081F2F;
+  text-transform: uppercase;
+  font-family: "Press Start 2P";
+  font-size: 0.8rem;
+  color: #FFF;
+}
