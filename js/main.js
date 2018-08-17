@@ -145,7 +145,7 @@ $(document).ready(function() {
     buttonId.click(function() {
       $("#edit-post").modal();
       $(".modal-body").empty();
-      $(".modal-body").prepend(`
+      $(".modal-body-edit").prepend(`
         <textarea class="post-textarea edit-post h-100 w-100" data-area-id=${key} />
       `);
       $(".edit-post").text(`${text}`);
